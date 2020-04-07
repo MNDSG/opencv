@@ -20,6 +20,7 @@ dst = np.zeros((height, width, 1), np.uint8)
 for i in range(0, height):
     for j in range(0, width):
         grayNow = gray[i, j]    # 取出每个像素灰度值
+        # print(gray[i, j])
         dst[i, j] = 255 - grayNow   # 对每个像素灰度值进行操作
 cv2.imshow("0", gray)
 cv2.imshow("1", dst)
@@ -29,6 +30,7 @@ dst1 = np.zeros((height, width, 3), np.uint8)
 for i in range(0, height):
     for j in range(0, width):
         (B, G, R) = image[i, j]
+        # print(image[i, j])
         dst1[i, j] = (255 - B, 255 - G, 255 - R)
 cv2.imshow("00", image)
 cv2.imshow("01", dst1)

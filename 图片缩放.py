@@ -12,8 +12,8 @@ mode = imgInfo[2]
 print(imgInfo)
 
 # 定义缩放倍数
-dstHeight = int(height * 0.5)
-dstWidth = int(width * 0.5)
+dstHeight = int(height * 1)
+dstWidth = int(width * 1)
 
 # 双线性插值,参数1为原图片,参数2为修改后图像宽度和高度
 dst = cv2.resize(img, (dstWidth, dstHeight))

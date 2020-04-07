@@ -1,3 +1,6 @@
+'''
+原理:用原图上的某一点周围随机像素点代替原图像素点
+'''
 import cv2
 import numpy as np
 import random
